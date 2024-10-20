@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Isha Roy</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#activities">Activities & Certifications</a></li>
+            <li><a href="#more">More</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Isha Roy</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+            <li><a href="#activities" onclick="toggleMenu()">Activities & Certifications</a></li>
+            <li><a href="#more" onclick="toggleMenu()">More</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <section id="profile">
+        <div class="section__pic-container">
+          <img src="./assets/profile-pic.png" alt="Isha Roy profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Isha Roy</h1>
+          <span class="input"></span>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/resume.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/isha-roy6/'"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/isha-roy'"
+            />
+          </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/pp.jpg"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>2+ years AR/VR Artist and Content Writing</p>
+                <p>1+ year Frontend Development</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3> Current Education</h3>
+                <p>B.Tech CSE <br />University Of Engineering and Management</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                I am a dedicated and adaptable individual with expertise in AR/VR technologies and content creation, with over 400 million views on my Snapchat lens. My experience includes managing social media strategies and building immersive AR experiences, all while maintaining a commitment to community welfare and environmental causes. With a passion for continuous learning, I excel at leading projects, collaborating with teams, and delivering impactful solutions.              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Work Experience</h2>
+                    
+                    <div class="job-entry">
+                        <div class="job-title">
+                            <strong>Summer Intern, IDEAS Tih, ISI Kolkata</strong>
+                        </div>
+                        <div class="date">Jun 2024 - Jul 2024</div>
+                        <p>
+                            Developed a stock predictor web app using Python, implementing Long Short-Term Memory (LSTM) networks for accurate time series forecasting. Optimized the app for real-time stock predictions, enhancing its performance and usability. Gained hands-on experience in data analysis, model development, and deployment, strengthening my expertise in both data science and web development.
+                        </p>
+                    </div>
+                    <br>
+    
+                    <div class="job-entry">
+                        <div class="job-title">
+                            <strong>Social Media Writer, Cherrymedia</strong>
+                        </div>
+                        <div class="date">May 2024 - Jun 2024</div>
+                        <p>
+                            Managed LinkedIn profiles and social media accounts, achieving +98.7% impressions and +35.2% follower growth through strategic content focused on industry and entrepreneurship topics.
+                        </p>
+                    </div>
+                    <br>
+    
+                    <div class="job-entry">
+                        <div class="job-title">
+                            <strong>Snapchat Opinion Leader, Under25</strong>
+                        </div>
+                        <div class="date">Jun 2023 - Jan 2024</div>
+                        <p>
+                            Built a hyperlocal campus community as a Snapchat Opinion Leader by creating 139+ AR Lenses with Lens Studio, generating 138M+ views. Contributed to team success, excelling in ideation, creation, and time management to support Snapchat India and Under 25's AR ecosystem initiative.
+                        </p>
+                    </div>
+                    <br>
+    
+                    <div class="job-entry">
+                        <div class="job-title">
+                            <strong>Content Writer, Restless Dreamers</strong>
+                        </div>
+                        <div class="date">Jun 2023 - Aug 2023</div>
+                        <p>
+                            Demonstrated adaptability, proactiveness, and a results-driven approach in managing diverse HR functions and cultivating a positive work environment. Effectively balanced empathy and firmness when handling employee matters, proving to be a reliable and capable company representative.
+                        </p>
+                    </div>
+                    <br>
+    
+                    <div class="job-entry">
+                        <div class="job-title">
+                            <strong>HR, Suvidha Foundation</strong>
+                        </div>
+                        <div class="date">May 2022 - Jul 2022</div>
+                        <p>
+                            Exhibited exceptional writing skills and a deep understanding of content creation, consistently delivering well-researched, high-quality pieces. Adapted to various styles with enthusiasm, collaborated effectively as a team player, and contributed positively to creative discussions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="education">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Educational Background</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Education</h2>
+    
+                    <div class="job-entry">
+                        <div class="job-title">
+                            <strong>Bachelor of Technology in Computer Science and Engineering</strong>
+                        </div>
+                        <div class="date">Expected Graduation: 2028</div>
+                        <p>University of Engineering and Management</p>
+                    </div>
+                    <br>
+    
+                    <div class="job-entry">
+                        <div class="job-title">
+                            <strong>CBSE 12</strong>
+                        </div>
+                        <div class="date">Year: 2024</div>
+                        <p>Sudhir Memorial Institute</p>
+                        <p><strong>Percentage:</strong> 88.88%</p>
+                    </div>
+                    <br>
+    
+                    <div class="job-entry">
+                        <div class="job-title">
+                            <strong>ICSE</strong>
+                        </div>
+                        <div class="date">Year: 2022</div>
+                        <p>Agrasain Balika Siksha Sadan</p>
+                        <p><strong>Percentage:</strong> 96.8%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="activities">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Activities and Certifications</h1>
+        <div class="activities-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="activities-sub-title">Activities</h2>
+    
+                    <div class="activity-entry">
+                        <strong>Volunteer, Codeday Kolkata</strong><br>
+                        <p>Organized a hackathon for over 100 school students, fostering creativity and problem-solving skills.</p>
+                    </div>
+                    <br>
+    
+                    <div class="activity-entry">
+                        <strong>Content Writer, SYTRON 2024</strong><br>
+                        <p>Involved in writing content in Sytron 2024 organised by IEM IEEE society</p>
+                    </div>
+                    <br>
+                    <div class="activity-entry">
+                        <strong>Content Writer, URECKON 2025</strong><br>
+                        <p>Involved in writing content for annual tech fest.</p>
+                    </div>
+                    <br>
+    
+                    <div class="activity-entry">
+                        <strong>Organizing Committee Member and Participant, UEMCON 2024</strong><br>
+                        <p>Served as an organizing committee member while also participating as the UAE delegate in UNGA DISEC.</p>
+                    </div>
+                    <br>
+    
+                    <div class="activity-entry">
+                        <strong>Volunteer, Gellers Cup</strong><br>
+                        <p>Contributed to organizing the event with the IEM IEEE CS Society.</p>
+                    </div>
+                    <br>
+    
+                    <div class="activity-entry">
+                        <strong>Attendee, Elevate 24</strong><br>
+                        <p>Engaged in discussions and networking at the event organized by the IEM IEEE Society.</p>
+                    </div>
+                    <br>
+    
+                    <div class="activity-entry">
+                        <strong>Participant, DevSprint</strong><br>
+                        <p>Attended a workshop on app and web development organized by the UEMK ACM Chapter.</p>
+                    </div>
+                    <br>
+    
+                    <div class="activity-entry">
+                        <strong>Volunteer, iVolunteer</strong><br>
+                        <p>Engaged in various volunteer activities focused on community welfare and development.</p>
+                    </div>
+                </div>
+    
+                <div class="details-container">
+                    <h2 class="certifications-sub-title">Certifications</h2>
+    
+                    <div class="certification-entry">
+                        <strong>Usefulness of Remote Sensing and GIS for Environmental Studies</strong><br>
+                        <p>Indian Institute of Remote Sensing (IIRS), ISRO - Scored 96.4%</p>
+                    </div>
+                    <br>
+    
+                    <div class="certification-entry">
+                        <strong>Cognitive Classroom Challenge</strong><br>
+                        <p>The New York Academy of Sciences - Developed NeoLearn, an AI-driven 3D visualization system.</p>
+                    </div>
+                    <br>
+    
+                    <div class="certification-entry">
+                        <strong>Cloud Engineering</strong><br>
+                        <p>Google Cloud Platform</p>
+                    </div>
+                    <br>
+    
+                    <div class="certification-entry">
+                        <strong>Astronomy: Exploring Time and Space</strong><br>
+                        <p>University of Arizona, Coursera - Completed the course.</p>
+                    </div>
+                    <br>
+    
+                    <div class="certification-entry">
+                        <strong>AI for India 2.0</strong><br>
+                        <p>Skill India Digital- Completed the course.</p>
+                    </div>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="more">
+        <h2 class="section__text__p1">Discover More</h2>
+        <div class="more-details-container">
+            <div class="about-containers">
+                <!-- Column 1: Memberships -->
+                <div class="details-container">
+                    
+                      
+                    
+                    <h2 class="more-sub-title">Memberships</h2>
+    
+                    <div class="membership-entry">
+                        <strong>UEMK ACM Student Chapter</strong><br>
+                    </div>
+                    <br>
+    
+                    <div class="membership-entry">
+                        <strong>UEMK IEEE Student Chapter</strong><br>
+                    </div>
+                    <br>
+    
+                    <div class="membership-entry">
+                        <strong>Iris - Photography Club</strong><br>
+                    </div>
+                    <br>
+    
+                    <div class="membership-entry">
+                        <strong>Google Developer Group, UEMK</strong><br>
+                    </div>
+                    <br>
+                </div>
+    
+                <!-- Column 2: Awards -->
+                <div class="details-container">
+                    <h2 class="more-sub-title">Awards</h2>
+    
+                    <div class="award-entry">
+                        <strong>Certificate Of Excellence in School Super League</strong><br>
+                        <p>Issued by Times of India and Byju's in 2020 for attaining the first position among 400 students.</p>
+                    </div>
+                    <br>
+    
+                    <div class="award-entry">
+                        <strong>Cognitive Classroom Challenge Finalists</strong><br>
+                        <p>Recognized as a finalist in the New York Academy of Sciences' Fall 2023 Cognitive Classroom Challenge.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:isharoy2006@gmail.com">Mail</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/isha-roy6/">LinkedIn</a></p>
+          </div>
+            <!-- GitHub Option -->
+            <div class="contact-info-container">
+            <img
+              src="./assets/github.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            /> 
+            <p><a href="https://github.com/isha-roy" >Github</a></p>
+            </div>
+            <div class="contact-info-container">
+            <img
+              src="./assets/instagram-logo-24.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            /> 
+            <p><a href="hhttps://www.instagram.com/beyondbeingsassy/" >Insta</a></p>
+            </div>
+
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#activities">Activities & Certifications</a></li>
+              <li><a href="#more">More</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Isha Roy. All Rights Reserved.</p>
+      </footer>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var typed = new Typed(".input", {
+                strings: ["Frontend Developer", "AR/VR Artist", "Content Writer"],
+                typeSpeed: 100,   // Slower typing speed
+            backSpeed: 60,    // Slower backspacing speed
+            startDelay: 500,  // Delay before typing starts
+            loop: true,
+            showCursor: false 
+            });
+        });
+    </script>
+    
+</body>
+</html>
